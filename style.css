@@ -1,0 +1,174 @@
+:root {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    --green-bg: #008000;
+}
+
+div {
+    min-height: 50px;
+    border: 1px solid indianred;
+}
+
+div span {
+    font-weight: bolder;
+}
+
+#nthChild :nth-child(2) {
+    background-color: grey;
+}
+
+#transformBox {
+    transform: rotate(2deg);
+}
+
+#bgVar {
+    background-color: var(--green-bg);
+}
+
+#bgDiv {
+    background: wheat url(./images/patten.jpg) left top repeat;
+}
+
+#calcWidth {
+    width: calc(100% - 300px);
+    background-color: thistle;
+}
+
+#before::before {
+    content: "HERE I AM ";
+    background-color: wheat;
+}
+
+#after::after {
+    content: " HERE I AM ";
+    background-color: wheat;
+}
+
+#psuedoSelectors a {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: 1rem;
+}
+
+a {
+    background-color: thistle;
+    color: var(--green-bg);
+}
+
+a:visited {
+    background-color: yellowgreen;
+    color: white;
+}
+
+a:active {
+    background-color: powderblue;
+    color: saddlebrown;
+}
+
+div > span {
+    background-color: tomato;    
+}
+
+#spanStatic{
+    position: static;
+    top: 25px;
+    left: 25px;
+}
+
+#spanRelative{
+    position: relative;
+    top: 20px;
+    left: 20px;
+}
+
+#spanAbsolute{
+    position: absolute;
+    top: 50px;
+    left: 50px;
+}
+
+#spanFixed{
+    position: fixed;
+    top: 25px;
+    left: 200px;    
+}
+
+#spanSticky{
+    position: sticky;
+    position: -webkit-sticky;
+    top: 20px;
+}
+
+#indent {
+    text-indent: 2em;
+    height: 100px;
+}
+
+.underline {
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: underline blue;
+    font-weight: lighter;
+}
+
+.skipInk {
+    text-decoration: underline blue;
+    text-decoration-skip-ink: auto;
+}
+
+.shadow {
+    background-color: white;
+    text-shadow: 10px 10px 2px greenyellow;
+}
+
+#borderRadius{
+    border-radius: 20px;
+    padding: 10px;
+}
+
+#borderRadius1{
+    border-top-left-radius: 60px;
+    border-top-right-radius: 30px;
+    padding-left: 50px;
+}
+
+#ellipticalRadius {
+    border-top-left-radius: 100px 50px;
+    padding-left: 100px;
+}
+
+#buttonHover:hover{
+    background-color: var(--green-bg);
+    color: white;
+}
+
+#gradient{
+   background:  linear-gradient(yellow, red);
+}
+#radialGradient{
+   background:  radial-gradient(yellow, red);
+}
+
+.nestedDiv{
+    min-width: 100px;    
+    height: 100px;
+    
+}
+
+#flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
+    flex-direction: column;
+}
+
+.flexGrow{
+    flex-grow: 2;
+}
+
+.flexShrink{
+    flex-shrink: 5;
+}
+
+.order {
+    order: 0;
+}
